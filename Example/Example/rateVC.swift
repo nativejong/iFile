@@ -16,8 +16,7 @@ class rateVC: UIViewController {
         super.viewDidLoad()
         self.edgesForExtendedLayout = []
         
-        rate = iFile(frame: CGRect.zero, bg: UIColor.red)
-
+        rate = iFile(frame: CGRect.zero)
         self.view.addSubview(rate!)
         self.view.backgroundColor = UIColor.red
     }
@@ -25,30 +24,8 @@ class rateVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.insertData()
     }
     
-    func insertData() {
-        
-        for _ in 0..<5{
-            rate?.addIt("Cherry Blossom",
-                dscr: "Kyoto",
-                url: "https://raw.githubusercontent.com/nativejong/iFile/main/images/cherry_blossom.jpg",
-                urld: nil )
-            
-            rate?.addIt("Japan",
-                dscr: "Osaka",
-                url: "https://raw.githubusercontent.com/nativejong/iFile/main/images/japan.png",
-                urld: nil )
-            
-            rate?.addIt("Castle",
-                dscr: "Tokyo",
-                url: "https://raw.githubusercontent.com/nativejong/iFile/main/images/japan2.png",
-                urld: nil )
-        }
-
-        rate?.refresh()
-    }
     
     override func viewWillLayoutSubviews() {
         let w = self.view.frame.size.width;
