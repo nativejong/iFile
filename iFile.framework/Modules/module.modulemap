@@ -1,0 +1,6 @@
+framework module iFile {
+  umbrella header "iFile.h"
+
+  export *
+  module * { export * }
+}
