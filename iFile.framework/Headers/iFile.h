@@ -39,6 +39,8 @@ typedef void (^CBlock)(NSInteger i);
     @property (strong, nonatomic) UITableView *tbl;
     @property (strong, nonatomic) NSMutableArray *myData;
     @property (strong, nonatomic) NSString *cPath;
+    @property (nonatomic, retain) UIButton *backBtn;
+    @property (nonatomic, retain) UIButton *symbol;
 
 - (void)beginTask3WithName:(NSString *)name completion:(NSString*(^)(int))callback success:(NSString*(^)(int))callback2;
 - (void)beginTask4WithName:(NSString *)name completion:(NSString*(^)(int))callback  success:(void (^)(NSInteger i))cblock;
