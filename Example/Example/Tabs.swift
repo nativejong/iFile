@@ -12,12 +12,15 @@ class Tabs: UITabBarController, UITabBarControllerDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let demoA = DemoA()
+        demoA.tabBarItem = UITabBarItem(title: "Demo A", image: self.resizeImage( s : "man" ), tag: 0 )
 
-        let music = rateNV()
+        let demoB = DemoB()
+        demoB.tabBarItem = UITabBarItem(title: "Demo B", image: self.resizeImage( s : "man" ), tag: 0 )
+
         
-        music.tabBarItem = UITabBarItem(title: "Music", image: self.resizeImage( s : "notes" ), tag: 0 )
-
-        self.viewControllers = [music]
+        
+        self.viewControllers = [demoA, demoB]
     }
     
     
