@@ -47,12 +47,6 @@
 ## About The Project
 
 iFile is a quick and easy way to add a Login/Signup UX to your iOS app.
-<table  border="0" >
-  <tr>
-    <td>Login</td>
-    <td><img src="/images/iFile.gif" width=200 height=400></td>
-  </tr>
- </table>
 
 
 ### Built With
